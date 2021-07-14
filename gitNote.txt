@@ -7,7 +7,9 @@ git commit -m " "                 (commit all file from stage)
 git commit -am " "               (direct commit from workspace)
 
 git status                              (exam stage and workspace)
+
 git log                                  (exam commit log)
+git log --graph
 git log --pretty=oneline        (show log in oneline)
 
 git resert --hard HEAD~3      (back version to last 3)
@@ -39,5 +41,27 @@ Branch Operation:
 
 git branch                                         (look up current branch)
 
-git checkout -b <branchName>        (create new branch)
+git branch <branchName>                (create branch)
+
+git checkout -b <branchName>        (create new branch as current branch)
+
+git checkout   <branchName>           (switch branch)
+
+git branch -m <oldName> <newName>    (change name of branch, using -M instead of -m if change forcibly)
+
+git push --set-upstream origin <newBranch>   (push to remote repository and need to use --set-upstream origin <newBranch> if remote has not the branch)
+
+git merge <branchName>                              (merge branch and PLEASE REMEMBER : you must use master)
+
+git branch -d <branchName>                                            (delete branch)
+
+git branch -a                                                 (look up branch in local and remote repository which related)
+
+git push origin <branchName>                     (push branch to remote repository)
+
+git push origin :<branchName>                    (delete the branch in remote repository)
+
+git fetch                                                        (update the information of remote repository in command window)
+
+git checkout -b right origin/right                   (create a new branch and over writed it by pulling the branch(origin/right) from remote to local repository)
 
