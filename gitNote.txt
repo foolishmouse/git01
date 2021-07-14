@@ -1,0 +1,43 @@
+Local Operation:
+
+git add ./                             (add to stage)
+git restore ./                        (discard )
+
+git commit -m " "                 (commit all file from stage)
+git commit -am " "               (direct commit from workspace)
+
+git status                              (exam stage and workspace)
+git log                                  (exam commit log)
+git log --pretty=oneline        (show log in oneline)
+
+git resert --hard HEAD~3      (back version to last 3)
+
+git reset --hard 264110789    (to version 264110789 which is the unique flag for the version
+                                             ps: allow to after-version when used  last commad)
+
+git reflog                              (exam all log)
+
+git ls-files                             (exam all files in repository)
+
+git checkout <fileName>( or ./)        (pull file from repository)
+
+
+Remote Operation: 
+
+ssh-keygen -t rsa -C "934532558@qq.com"        (generate SSH key for github account)
+ssh -T git@github.com                                       (confirm the SSH key)
+git clone git@github.com:dromara/hutool.git      (download project using SSH)
+
+git remote add origin git@github.com:foolishmouse/git01.git      (connect to remote repository)
+
+git push -u origin master                               (push to remote repository)
+
+git push                                                         (push to remote repository from local repository)
+
+
+Branch Operation: 
+
+git branch                                         (look up current branch)
+
+git checkout -b <branchName>        (create new branch)
+
